@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:background="@color/cadetblue"
+            android:gravity="center"
+            android:text="评论"
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/iv_back_title_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+
+    
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_liaotie_comment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="#3e3e3e"
+        android:layout_weight="1" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+   
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/aliceblue"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_mycomment_txt"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext_selector"
+                android:gravity="center_vertical"
+                android:hint="评论"
+                android:maxLength="145"
+                android:paddingLeft="10dp"
+                android:selectAllOnFocus="false"
+                android:textColor="#000"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_send_comment_txt"
+                android:layout_width="56dp"
+                android:layout_height="46dp"
+                android:background="@drawable/send"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

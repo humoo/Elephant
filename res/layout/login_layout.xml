@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="200dp" >
+
+    <EditText
+        android:id="@+id/et_login_account"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bg_edittext_selector"
+        android:hint="请输入昵称或邮箱"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bg_edittext_selector"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="1dp"
+        android:background="@drawable/button_selector"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="登陆"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="还没账号？马上注册-->"
+        android:textColor="#000"
+        android:textSize="11sp" />
+
+</LinearLayout>

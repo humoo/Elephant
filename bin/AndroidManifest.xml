@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.elephant"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 读取SD卡状态所需权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 读取或更改系统设置 所需权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 手机震动所需权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 查询网络状态的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 调用系统窗口所需权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 用户定位所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <!-- 允许程序修改全局音频设置 比如说：存储位置 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 录制语音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<!-- 获取处于栈顶的activity -->
+    <uses-permission android:name = "android.permission.GET_TASKS"/>
+    
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme_NOTITLE" >
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainUIActivity" >
+        </activity>
+        <activity android:name=".TabMainActivity" >
+        </activity>
+        <activity android:name=".AddNewTextActivity" >
+        </activity>
+        <activity android:name=".Layout_2" >
+        </activity>
+        <activity android:name=".Layout_3" >
+        </activity>
+        <activity android:name=".Layout_4" >
+        </activity>
+        <activity android:name=".LoginActivity" >
+        </activity>
+        <activity android:name=".SettingActivity" >
+        </activity>
+        <activity android:name=".MainComment" >
+        </activity>
+        <activity android:name=".AccountInfoActivity" >
+        </activity>
+        <activity android:name=".ChangeSignificanceActivity" >
+        </activity>
+        <activity android:name=".InfoIconActivity" >
+        </activity>
+        <activity android:name=".RegisterActivity" >
+        </activity>
+        <activity android:name=".ChangeNickNameActivity" >
+        </activity>
+        <activity android:name=".ChangeSubjectActivity" >
+        </activity>
+        <activity android:name=".ChangePasswordActivity" >
+        </activity>
+        <activity android:name=".AddNewLiaotieActivity" >
+        </activity>
+        <activity android:name=".LiaoTieCommentActivity" >
+        </activity>
+        <activity android:name="com.example.elephant.image.GridViewActivity" >
+        </activity>
+        <activity android:name="com.example.elephant.image.ListViewActivity" >
+        </activity>
+        <activity android:name="com.example.elephant.image2.ChoosePhotosActivity" >
+        </activity>
+        <activity android:name="com.example.elephant.image2.ImageGridActivity" >
+        </activity>
+        <activity android:name="com.example.elephant.im.IM_Chat_activity" >
+        </activity>
+         <activity android:name="com.example.elephant.im.AddNewFriendActivity" >
+        </activity>
+         <activity android:name="com.example.elephant.im.ChatMainActivity"
+             android:launchMode="singleInstance"
+              android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name=".ShowPhotoActivity"
+            android:launchMode="singleInstance" >
+        </activity>
+
+        <receiver android:name="com.example.elephant.utils.MyBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="com.example.elephant.utils.DATA_DAWNLOAD_SUCCESS" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.example.elephant.utils.CommentBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="com.example.elephant.utils.COMMENT_DAWNLOAD_SUCCESS" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

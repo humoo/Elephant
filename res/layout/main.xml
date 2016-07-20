@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="小象君"
+        android:textColor="#000"
+        android:background="@color/ivory"
+        android:gravity="center"
+        android:textSize="22sp"/>
+    
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white" >
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tab_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#bed3ac"
+            android:checked="true"
+            android:drawableTop="@drawable/f000"
+            android:gravity="center"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/tab_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#7ebea5"
+            android:drawableTop="@drawable/f001"
+            android:gravity="center"
+            android:text="附近运力" />
+
+        <RadioButton
+            android:id="@+id/tab_three"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#7ebea5"
+            android:drawableTop="@drawable/f002"
+            android:gravity="center"
+            android:text="末端网点" />
+
+        <RadioButton
+            android:id="@+id/tab_four"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#7ebea5"
+            android:drawableTop="@drawable/f004"
+            android:gravity="center"
+            android:text="个人中心" />
+    </RadioGroup>
+
+</LinearLayout>

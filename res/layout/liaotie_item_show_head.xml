@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F7F7F7"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="6dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="3dp" >
+
+            <ImageView
+                android:id="@+id/item_img_lv_item_ui"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:src="@drawable/circle_head" />
+
+            <TextView
+                android:id="@+id/tv_comment_username"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="65dp"
+                android:text="老司机"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="17sp" />
+            
+             <TextView
+                android:id="@+id/item_school_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginLeft="3dp"
+				android:layout_toRightOf="@id/tv_comment_username"
+                android:text="[学校]"
+                android:gravity="center"
+                android:textColor="#55000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_comment_significance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="20dp"
+                android:text="专注开车二十年"
+                android:textColor="#aa000000"
+                android:textSize="12sp" />
+
+            
+
+            <TextView
+                android:id="@+id/tv_post_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="66dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="1dp"
+                android:text="发布时间"
+                android:textColor="@color/grey"
+                android:textSize="8sp" />
+
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_content_lay_tv_main_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="6dp" >
+
+        <TextView
+            android:id="@+id/item_content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="一些话一些话一些话一些话一些话一些话\n一些话\n一些话\n一些话\n一些话"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="36dp"
+        android:paddingBottom="6dp">
+        
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" 
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/zan" />
+
+                <TextView
+                    android:id="@+id/tv_zan_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:text="0"
+                    android:textColor="@color/gray"
+                    android:textSize="15dp" />
+
+                
+            </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

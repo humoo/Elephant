@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f7f7f7"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="6dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="3dp" >
+
+            <ImageView
+                android:id="@+id/item_img_lv_item_ui"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:src="@drawable/circle_head" />
+
+            <TextView
+                android:id="@+id/item_name_tv_mian_ui"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginLeft="65dp"
+                android:gravity="center"
+                android:text="老司机"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/item_school_tv_mian_ui"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/item_name_tv_mian_ui"
+                android:gravity="center"
+                android:text="[学校]"
+                android:textColor="#55000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/item_signature_tv_mian_ui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="20dp"
+                android:text="专注开车二十年"
+                android:textColor="#aa000000"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/main_item_more"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/more" />
+
+            <TextView
+                android:id="@+id/tv_post_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="66dp"
+                android:text="发布时间"
+                android:textColor="@color/grey"
+                android:textSize="8sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/view_count" />
+
+                <TextView
+                    android:id="@+id/tv_view_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="5dp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="11dp"
+                    android:src="@drawable/comment" />
+
+                <TextView
+                    android:id="@+id/tv_view_comment_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_content_lay_tv_main_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="6dp" >
+
+        <TextView
+            android:id="@+id/item_content_tv_main_uiBookName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="书名 : "
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_content_tv_main_uiBookAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="作者 : "
+            android:textColor="#99000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_content_tv_main_uiBookISBN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ISBN : "
+            android:textColor="#99000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_content_tv_main_uiBookPublisher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="出版社 : "
+            android:textColor="#99000000"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="留言 : "
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/item_content_tv_main_ui4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="8"
+                android:maxLines="2"
+                android:textColor="#99000000"
+                android:textSize="15sp" 
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
